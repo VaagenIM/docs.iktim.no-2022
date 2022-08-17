@@ -9,7 +9,7 @@ created: 2022-08-17 15:16:04
 updated: 2022-08-17 15:17:26
 ---
 # Uke 33 IKT
-Denne uken jobber vi med:
+Her er en liste over hva vi går gjennom denne uka, med noen godsaker i bunn 😄
 
 ## Introduksjon
 Vi går gjennom planen for skoleåret.
@@ -24,7 +24,7 @@ Vi spiller gjennom spillet The Beginner's Guide
 Vi ser litt på kunstig intelligens og prøvde ut [DALL·E 2](https://openai.com/dall-e-2/)
 
 ## Gjøremål
-- Ingen oppgaver denne uken
+- Ingen gjøremål denne uken
 
 **Fremtidige gjøremål:**
 - Registrere GitHub konto og bli med i GitHub classroom (Invitasjonslinke ligger i Teams)
@@ -43,8 +43,8 @@ Vi ser litt på kunstig intelligens og prøvde ut [DALL·E 2](https://openai.com
 - [YouTube: Raspberry Pi & DIY hjerneforskning](https://www.youtube.com/watch?v=6sPE8N9aRQQ)
 - [NRKBeta: DALL·E 2](https://nrkbeta.no/2022/06/18/maskinenes-kreative-revolusjon/)
 
+Samsung MegaPortraits:
 <video poster="" id="blocks" autoplay="" controls="" muted="" loop="" height="50%"><source src="https://samsunglabs.github.io/MegaPortraits/static/videos/results/nikita_2drivers_1024_compressed.mp4" type="video/mp4"></video>
-
 
 ### Utforskningslenker
 - [DALL·E Mini](https://huggingface.co/spaces/dalle-mini/dalle-mini) - eldre versjon av DALL·E i nettleser
