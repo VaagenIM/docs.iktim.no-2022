@@ -1,14 +1,14 @@
 ---
-title: 2022.08 Uke 33 IKT
+title: Uke 33 IKT
 aliases: 
-  - 2022.08 Uke 33
+  - Uke 33
 lang: nb-NO
 authors:
   - Sondre Grønås
 created: 2022-08-17 15:16:04
 updated: 2022-08-17 15:17:26
 ---
-# 2022-08 Uke 33 IKT
+# Uke 33 IKT
 Denne uken jobber vi med:
 
 ## Introduksjon
