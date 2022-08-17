@@ -1,17 +1,12 @@
 site/
 
-# Obsidian
-.vault-stats
 .obsidian/
+.vault-stats
 .trash/
-
-# Obsidian Templates
+_cfg/
 _DATA/
 
-
+*.bib
 *.DS_Store
 .DS_Store
-
-*.bib
-
 .cache
