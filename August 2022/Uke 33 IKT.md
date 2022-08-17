@@ -11,16 +11,16 @@ updated: 2022-08-17 15:17:26
 # 2022-08 Uke 33 IKT
 Denne uken jobber vi med:
 
-### Introduksjon
+## Introduksjon
 Vi går gjennom planen for skoleåret.
 
-### Kodet for første gang
+## Kodet for første gang
 Vi programmerer vår første kode, der vi laget en PB&J, uten teknologi
 
-### [The Beginner's Guide](https://store.steampowered.com/app/303210/The_Beginners_Guide/)
+## [The Beginner's Guide](https://store.steampowered.com/app/303210/The_Beginners_Guide/)
 Vi spiller gjennom spillet The Beginner's Guide
 
-### AI
+## AI
 Vi ser litt på kunstig intelligens og prøvde ut [DALL·E 2](https://openai.com/dall-e-2/)
 
 ## Gjøremål
@@ -33,6 +33,6 @@ Vi ser litt på kunstig intelligens og prøvde ut [DALL·E 2](https://openai.com
 - Last ned [Python](https://www.python.org/downloads/)
 
 > [!IMPORTANT]+ Python Path
-> Når du laster ned Python er det en liten checkbox der det står `Add to Path`. 
-> Det er en stor fordel at du huker av denne.
+> Når du laster ned Python er det en liten checkbox der det står `Add Python to Path`. 
+> Det er en stor fordel om du huker av denne.
 > ![[uke33-python-addtopath.png]]
