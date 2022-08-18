@@ -11,6 +11,9 @@ updated: 2022-08-17 15:17:26
 # Uke 33 IKT
 Her er en liste over hva vi går gjennom denne uka, med noen godsaker i bunn 😄
 
+## Presentasjon
+Lenke til presentasjon: https://slides.iktim.no/01-Hello-World
+
 ## Introduksjon
 Vi går gjennom planen for skoleåret.
 
