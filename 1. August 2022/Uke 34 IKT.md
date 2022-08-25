@@ -23,7 +23,7 @@ Ingen gjøremål denne uken 😄
 - [Microsoft Virtual Humans AI](https://microsoft.github.io/DenseLandmarks/) - digitale mennesker ([YouTube](https://www.youtube.com/watch?v=6-FESfXHF5s))
 
 **Microsoft:**
-<iframe src="https://microsoft.github.io/DenseLandmarks/video/realtime.mp4"></iframe>
+<video poster="" id="blocks" autoplay="" controls="" muted="" loop="" height="50%"><source src="https://microsoft.github.io/DenseLandmarks/video/realtime.mp4" type="video/mp4"></video>
 
 ### Utforskningslenker
 - Ingen merkverdige ting å utforske denne uken
