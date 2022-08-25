@@ -22,5 +22,8 @@ Ingen gjøremål denne uken 😄
 - [NRKBeta: Be Real](https://nrkbeta.no/2022/08/19/bereal-er-appen-der-alle-er-aerlige/) - appen som ber brukerne være ærlig
 - [Microsoft Virtual Humans AI](https://microsoft.github.io/DenseLandmarks/) - digitale mennesker ([YouTube](https://www.youtube.com/watch?v=6-FESfXHF5s))
 
+**Microsoft:**
+<iframe src="https://microsoft.github.io/DenseLandmarks/video/realtime.mp4"></iframe>
+
 ### Utforskningslenker
 - Ingen merkverdige ting å utforske denne uken
