@@ -10,13 +10,13 @@ updated: 2022-08-26 13:35:57
 ---
 # Uke 34 IKT
 Denne uken jobbet vi med:
-- Opprettet GitHub konto
+- Opprettet [GitHub konto](https://github.com/)
 - Fyllte ut [Studentsøknad hos Jetbrains](https://www.jetbrains.com/shop/eform/students)
 - Lastet ned [JetBrains WebStorm](https://www.jetbrains.com/webstorm/download)
-- Aktiverte JetBrains lisens
+- Aktiverte JetBrains lisens (ved å starte WebStorm)
 - Alternativt: [Lastet ned Notepad++](https://notepad-plus-plus.org/)
 - Lærte å skrive enkel [[01 Hva er HTML|HTML]]
-- Så litt på [Awwwards](https://www.awwwards.com/) eller [w3schools](https://www.w3schools.com/)
+- Så litt på [Awwwards](https://www.awwwards.com/) og [w3schools](https://www.w3schools.com/)
 
 ## Gjøremål
 Last ned [JetBrains WebStorm](https://www.jetbrains.com/webstorm/download) og aktiver lisens, hvis du får opp valget "Nytt prosjekt" så er det bra! Kontakt oss dersom du ikke får det til.
