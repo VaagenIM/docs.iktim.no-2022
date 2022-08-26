@@ -21,6 +21,24 @@ Denne uken jobbet vi med:
 ## Gjøremål
 Last ned [JetBrains WebStorm](https://www.jetbrains.com/webstorm/download) og aktiver lisens, hvis du får opp valget "Nytt prosjekt" så er det bra! Kontakt oss dersom du ikke får det til.
 
+## Kildekode
+Kildekoden til HTML filen vi opprettet i dag:
+```html title="index.html"
+<html>
+<head>
+    <title>IM</title>
+</head>
+<body>
+    <h1>Overskrift 1</h1>
+    <h2>Overskrift 2</h2>
+    <h3>Overskrift 3</h3>
+    <h4>Overskrift 4</h4>
+    <h5>Overskrift 5</h5>  
+    <h6>Overskrift 6</h6>
+</body>
+</html>
+```
+
 ## Ukens innlegg
 - [NRKBeta: Be Real](https://nrkbeta.no/2022/08/19/bereal-er-appen-der-alle-er-aerlige/) - appen som ber brukerne være ærlig
 - [Microsoft Virtual Humans AI](https://microsoft.github.io/DenseLandmarks/) - digitale mennesker ([YouTube](https://www.youtube.com/watch?v=6-FESfXHF5s))
