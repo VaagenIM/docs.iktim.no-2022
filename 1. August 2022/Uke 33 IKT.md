@@ -6,7 +6,7 @@ lang: nb-NO
 authors:
   - Sondre Grønås
 created: 2022-08-17 15:16:04
-updated: 2022-08-25 10:51:51
+updated: 2022-08-30 15:13:17
 ---
 # Uke 33 IKT
 Her er en liste over hva vi går gjennom denne uka, med noen godsaker i bunn 😄
