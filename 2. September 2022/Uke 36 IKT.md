@@ -44,7 +44,6 @@ Denne uken jobbet vi med:
 </body>
 </html>
 ```
-
 ```css title="style.css"
 h1{
 	color: red;
