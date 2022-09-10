@@ -82,7 +82,7 @@ Veiledning: https://www.w3schools.com/css/css_howto.asp
 Vi skal se på hvordan vi lager seksjoner / inndelinger i HTML, slik at vi kan flytte samlete elementer, istedenfor individuelle elementer. - Dette er mye bedre praksis og er ofte enklere å jobbe med.
 
 > [!code]- Et fremtidig blikk inn i seksjoner / inndelinger
-> En section eller inndeling lages via `<section>` eller `<div>` tagger slik. HTML har også noen innebygde navn for seksjoner; `<header>` og `<footer>`:
+> En section eller inndeling lages via `<section>` eller `<div>` tagger (se under). HTML har også noen innebygde navn for seksjoner; `<header>` og `<footer>`:
 > ```html title="index.html"
 > <html>
 > <head>
@@ -111,13 +111,14 @@ Vi skal se på hvordan vi lager seksjoner / inndelinger i HTML, slik at vi kan f
 > Via CSS kan man selektere individuelle seksjoner og endre for eksempel plassering, uten å påvirke innholdet i seksjonen
 > ```css title="style.css"
 > header{
-> 	position: fixed; /* På toppen av siden, følg museposisjon */
+> 	position: fixed; /* På toppen av siden, følg scrollbar til siden */
 > }
 > #content{
 > 	background-color: green;
-> 	padding: 20%;
+> 	padding: 20%; /* Elementene på INNSIDEN av seksjonen skal ha 20% innrykk på siden (marg i boka) */
 > }
 > footer{
+> 	margin-top: 20%; /* Skal plasseres 20% lenger ned enn forrige element (UTSIDEN) (#content) */
 > 	background-color: blue;
 > }
 > ```
