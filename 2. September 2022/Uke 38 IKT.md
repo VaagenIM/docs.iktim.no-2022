@@ -20,6 +20,8 @@ Gammel presentasjon denne uken, den kan lastes ned her:
 https://github.com/VaagenIM/files/raw/ikt/powerpoints/Intro%20Powerpoint%20om%20Nettverk%2C%20gammel.pdf
 
 ## Gjøremål
+Repetisjonsquiz, data: https://forms.office.com/r/eSUbFBfkdQ
+
 Vi jobber videre med HTML, senere skal vi se mer på GitHub.
 
 ## Ukens innlegg
