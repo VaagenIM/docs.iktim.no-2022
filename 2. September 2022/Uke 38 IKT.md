@@ -27,6 +27,9 @@ Repetisjonsquiz, data: https://forms.office.com/r/eSUbFBfkdQ - ta denne til du f
 
 Vi jobber videre med HTML, senere skal vi se mer på GitHub.
 
+Kildekode: https://github.com/VaagenIM/html-template-09-2022
+Resultat: https://vaagenim.github.io/html-template-09-2022/
+
 ## Ukens innlegg
 - Ingen merkverdige artikler eller videoer denne uken.
 
