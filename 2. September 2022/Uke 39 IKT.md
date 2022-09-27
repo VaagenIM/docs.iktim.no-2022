@@ -27,4 +27,5 @@ Bli medlem i GitHub Classroom, lenke finner du i teamet vårt på Teams. Velg di
 - Ingen merkverdige artikler eller videoer denne uken.
 
 ### Utforskningslenker
-- Ingen merkverdige ting å utforske denne uken
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NnoTWZ9qgYg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
