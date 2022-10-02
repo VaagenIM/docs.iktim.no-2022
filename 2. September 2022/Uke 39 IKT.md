@@ -6,13 +6,14 @@ lang: nb-NO
 authors:
   - Sondre Grønås
 created: 2022-09-27 07:53:52
-updated: 2022-09-27 07:53:57
+updated: 2022-10-02 20:35:02
 ---
 # Uke 39 IKT
 Denne uken jobbet vi med:
 - Mer om nettverk og dataoverføring
 - Forberede avslutning av HTML
-- Intro GitHub
+- Intro til GitHub
+- Vi spillte gjennom [Florence](https://store.steampowered.com/app/1102130/Florence/)
 
 
 ## Presentasjon
@@ -20,6 +21,8 @@ Gammel presentasjon denne uken også; https://github.com/VaagenIM/files/raw/ikt/
 
 ## Gjøremål
 Skriftlige oppgaver ligger i Teams, "20 IKT Nettverksbegreper"
+
+Vi leverte også HTML siden vår, det vi hadde gjort til nå.
 
 Bli medlem i GitHub Classroom, lenke finner du i teamet vårt på Teams. Velg ditt eget navn når du registrerer deg, slik at jeg kan identifisere dere.
 
