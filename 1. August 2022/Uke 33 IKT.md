@@ -6,14 +6,14 @@ lang: nb-NO
 authors:
   - Sondre Grønås
 created: 2022-08-17 15:16:04
-updated: 2022-08-30 15:13:17
+updated: 2022-10-14 19:25:04
 ---
 # Uke 33 IKT
 Her er en liste over hva vi går gjennom denne uka, med noen godsaker i bunn 😄
 
 ## Presentasjon
-<iframe class="slide" src="https://slides.iktim.no/22-23/01-Hello-World"></iframe>
-[Fullskjerm](https://slides.iktim.no/22-23/01-Hello-World)
+<iframe class="slide" src="https://slides.iktim.no/slides/01-Hello-World"></iframe>
+[Fullskjerm](https://slides.iktim.no/slides/01-Hello-World)
 
 ## Introduksjon
 Vi går gjennom planen for skoleåret.

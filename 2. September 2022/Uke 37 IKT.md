@@ -17,8 +17,8 @@ Denne uken jobbet vi med:
 - Vi tok en personlighetstest: https://www.16personalities.com/
 
 ## Presentasjon
-<iframe class="slide" src="https://slides.iktim.no/22-23/03-Datakomponenter/"></iframe>
-[Fullskjerm](https://slides.iktim.no/22-23/03-Datakomponenter/)
+<iframe class="slide" src="https://slides.iktim.no/slides/03-Datakomponenter/"></iframe>
+[Fullskjerm](https://slides.iktim.no/slides/03-Datakomponenter/)
 
 ## Gjøremål
 Se oppgave 14 og 15 i Teams, oppgave 15 skal ikke leveres før uke 39.

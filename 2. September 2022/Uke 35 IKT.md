@@ -6,7 +6,7 @@ lang: nb-NO
 authors:
   - Sondre Grønås
 created: 2022-08-29 13:02:36
-updated: 2022-09-02 13:52:18
+updated: 2022-10-14 19:25:12
 ---
 # Uke 35 IKT
 Denne uken jobbet vi med:
@@ -16,8 +16,8 @@ Denne uken jobbet vi med:
 - Teori: [[04 Vanlige HTML tagger]]
 
 ## Presentasjon
-<iframe class="slide" src="https://slides.iktim.no/22-23/02-Datamaskinen"></iframe>
-[Fullskjerm](https://slides.iktim.no/22-23/02-Datamaskinen)
+<iframe class="slide" src="https://slides.iktim.no/slides/02-Datamaskinen"></iframe>
+[Fullskjerm](https://slides.iktim.no/slides/02-Datamaskinen)
 
 ## Gjøremål
 - Oppgave 07 IKT Første nettside, ligger i Teams.
