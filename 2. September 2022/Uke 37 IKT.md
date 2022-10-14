@@ -6,7 +6,7 @@ lang: nb-NO
 authors:
   - Sondre Grønås
 created: 2022-09-16 14:27:29
-updated: 2022-09-20 10:19:20
+updated: 2022-10-14 19:25:18
 ---
 # Uke 37 IKT
 Denne uken jobbet vi med:
