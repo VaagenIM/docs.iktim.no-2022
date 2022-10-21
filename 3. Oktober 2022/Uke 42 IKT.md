@@ -37,6 +37,8 @@ Lenker:
 - PyCharm (Professional): https://www.jetbrains.com/pycharm/download
 - Python (3.10.8, eller nyere): https://www.python.org/downloads/
 
+Dersom du ikke finner PyCharm professional lisens, kan det hende du må søke på ny: https://www.jetbrains.com/shop/eform/students (Bruk din elev.rogfk.no e-post, eventuelt logg inn med GitHub)
+
 > [!IMPORTANT] OBS: Husk å huk valget for Add Python 3.X to PATH
 > Uten denne så virker ikke nødvendigvis installasjonen på riktig måte.
 > ![[python-add-to-path.png]]
