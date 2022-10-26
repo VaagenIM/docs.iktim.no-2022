@@ -1,12 +1,12 @@
 ---
-title: Uke 38 IKT
+title: Uke 38 IKT - HTML, Nettverk
 aliases: 
   - Uke 38 IKT
 lang: nb-NO
 authors:
   - Sondre Grønås
 created: 2022-09-20 10:15:02
-updated: 2022-09-23 16:39:51
+updated: 2022-10-26 11:54:11
 ---
 # Uke 38 IKT
 Denne uken jobbet vi med:

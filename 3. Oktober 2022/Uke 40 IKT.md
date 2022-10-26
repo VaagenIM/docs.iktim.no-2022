@@ -1,12 +1,12 @@
 ---
-title: Uke 40 IKT
+title: Uke 40 IKT - YFF Prosjekt
 aliases: 
   - Uke 40 IKT
 lang: nb-NO
 authors:
   - Sondre Grønås
 created: 2022-10-03 09:14:00
-updated: 2022-10-03 09:14:02
+updated: 2022-10-26 11:54:57
 ---
 # Uke 40 IKT
 Denne uken jobbet vi med:

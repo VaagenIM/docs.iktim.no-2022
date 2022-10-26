@@ -1,12 +1,12 @@
 ---
-title: Uke 36 IKT
+title: Uke 36 IKT - HTML, Hero
 aliases: 
   - Uke 36 IKT
 lang: nb-NO
 authors:
   - Sondre Grønås
 created: 2022-09-10 21:25:15
-updated: 2022-09-13 10:44:20
+updated: 2022-10-26 11:53:43
 ---
 # Uke 36 IKT
 Denne uken jobbet vi med:

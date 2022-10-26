@@ -1,12 +1,12 @@
 ---
-title: Uke 42 IKT
+title: Uke 42 IKT - Gaming, Python
 aliases: 
   - Uke 42 IKT
 lang: nb-NO
 authors:
   - Sondre Grønås
 created: 2022-10-21 15:35:36
-updated: 2022-10-21 15:35:38
+updated: 2022-10-26 11:55:11
 ---
 # Uke 42 IKT
 Denne uken jobbet vi med litt fornuftig gaming, pizzaspising samt intro til programmering.

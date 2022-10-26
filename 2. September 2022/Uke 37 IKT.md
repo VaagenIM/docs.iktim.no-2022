@@ -1,12 +1,12 @@
 ---
-title: Uke 37 IKT
+title: Uke 37 IKT - Datamaskinen, HTML
 aliases: 
   - Uke 37 IKT
 lang: nb-NO
 authors:
   - Sondre Grønås
 created: 2022-09-16 14:27:29
-updated: 2022-10-14 19:25:18
+updated: 2022-10-26 11:53:50
 ---
 # Uke 37 IKT
 Denne uken jobbet vi med:
