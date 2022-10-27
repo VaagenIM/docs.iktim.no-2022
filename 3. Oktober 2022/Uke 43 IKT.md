@@ -6,13 +6,16 @@ lang: nb-NO
 authors:
   - Sondre Grønås
 created: 2022-10-26 11:52:43
-updated: 2022-10-26 11:52:46
+updated: 2022-10-27 22:31:03
 ---
 # Uke 43 IKT
 Denne uken jobbet vi med:
 - Vi var på foredrag med A.I. forsker Morten Goodwin ved UiS.
 ![[morten-goodwin.png]]
 (Kilde: https://ehin.no/2021/wp-content/uploads/sites/3/2021/04/MortenGoodwin.png)
+
+Mortens selfie fra dagen:
+![[morten-goodwins-selfie.png]]
 ## Gjøremål
 Kommer snart.
 
