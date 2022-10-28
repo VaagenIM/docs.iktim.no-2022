@@ -32,6 +32,8 @@ Ingen konkrete gjøremål denne uka
 
 ### Utforskningslenker
 - Nora AI: https://www.nora.ai/
+- Hackster.io, hackerboard prosjekter: https://www.hackster.io/search?i=projects&q=microbit
+- Micro:bit Tutorials: https://makecode.microbit.org/tutorials
 - Stable Diffusion Web-UI: https://github.com/Sygil-Dev/sygil-webui
 - Joe Penna Stable Diffusion: https://github.com/JoePenna/Dreambooth-Stable-Diffusion
 
