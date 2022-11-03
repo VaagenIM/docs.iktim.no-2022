@@ -6,11 +6,11 @@ on:
 
 jobs:
   dispatch:
-    permissions: write-all
     runs-on: ubuntu-latest
     steps:
     - name: Repository Dispatch
       uses: peter-evans/repository-dispatch@v2.1.0
       with:
+        token: ${{ secrets.DOCS_TOKEN }}
         repository: VaagenIM/docs.iktim.no
         event-type: doc_update
