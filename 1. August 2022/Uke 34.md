@@ -1,14 +1,14 @@
 ---
-title: Uke 34 IKT - Intro HTML
+title: Uke 34 - Intro HTML
 aliases: 
-  - Uke 34 IKT
+  - Uke 34
 lang: nb-NO
 authors:
   - Sondre Grønås
 created: 2022-08-25 10:44:20
-updated: 2022-10-26 11:54:47
+updated: 2022-11-09 14:16:43
 ---
-# Uke 34 IKT
+# Uke 34 - Intro HTML
 Denne uken jobbet vi med:
 - Opprettet [GitHub konto](https://github.com/)
 - Fyllte ut [Studentsøknad hos Jetbrains](https://www.jetbrains.com/shop/eform/students)

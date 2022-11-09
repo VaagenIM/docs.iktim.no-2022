@@ -1,14 +1,14 @@
 ---
-title: Uke 35 IKT - Datamaskinen, HTML
+title: Uke 35 - Datamaskinen, HTML
 aliases: 
-  - Uke 35 IKT
+  - Uke 35
 lang: nb-NO
 authors:
   - Sondre Grønås
 created: 2022-08-29 13:02:36
-updated: 2022-10-26 11:53:32
+updated: 2022-11-09 14:16:37
 ---
-# Uke 35 IKT
+# Uke 35 - Datamaskinen & HTML
 Denne uken jobbet vi med:
 - Lærte litt om datamaskinen
 - Prøvde oss som en CPU i [Human Resource Machine](https://spill.iktim.no/human_resource_machine)

@@ -1,14 +1,14 @@
 ---
-title: Uke 38 IKT - HTML, Nettverk
+title: Uke 38 - HTML, Nettverk
 aliases: 
-  - Uke 38 IKT
+  - Uke 38
 lang: nb-NO
 authors:
   - Sondre Grønås
 created: 2022-09-20 10:15:02
-updated: 2022-10-26 11:54:11
+updated: 2022-11-09 14:15:59
 ---
-# Uke 38 IKT
+# Uke 38 - HTML & Nettverk
 Denne uken jobbet vi med:
 - Litt repetisjon om datamaskinen. Teori: https://docs.iktim.no/IKT/2-Data/
 - Kort innføring om nettverk, en intro. Teori: https://docs.iktim.no/IKT/3-Nettverk/

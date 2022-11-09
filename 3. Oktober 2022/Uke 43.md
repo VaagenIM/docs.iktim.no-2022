@@ -1,14 +1,14 @@
 ---
-title: Uke 43 IKT - AI, Programmering
+title: Uke 43 - AI, Programmering
 aliases: 
-  - Uke 43 IKT
+  - Uke 43
 lang: nb-NO
 authors:
   - Sondre Grønås
 created: 2022-10-26 11:52:43
-updated: 2022-10-28 12:10:24
+updated: 2022-11-09 14:13:39
 ---
-# Uke 43 IKT
+# Uke 43 - AI & Programmering
 Denne uken jobbet vi med:
 - Vi var på foredrag med A.I. forsker Morten Goodwin ved UiS 👨‍🏫
 - Vi spillte [Dr. Langeskov, The Tiger, and The Terribly Cursed Emerald: A Whirlwind Heist](https://spill.iktim.no/Dr.-Langeskov,-The-Tiger,-and-The-Terribly-Cursed-Emerald-A-Whirlwind-Heist) 🕹
@@ -34,7 +34,7 @@ Ingen konkrete gjøremål denne uka
 - Nora AI: https://www.nora.ai/
 - Hackster.io, hackerboard prosjekter: https://www.hackster.io/search?i=projects&q=microbit
 - Micro:bit Tutorials: https://makecode.microbit.org/tutorials
-- Stable Diffusion Web-UI: https://github.com/Sygil-Dev/sygil-webui
+- Stable Diffusion Web-UI: https://github.com/AUTOMATIC1111/stable-diffusion-webui
 - Joe Penna Stable Diffusion: https://github.com/JoePenna/Dreambooth-Stable-Diffusion
 
 Corridor Digital som eksperimetnerer med Joe Penna's Stable Diffusion - bra video! 🎬

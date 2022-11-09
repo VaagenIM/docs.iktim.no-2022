@@ -1,14 +1,14 @@
 ---
-title: Uke 44 IKT - Micro:bit
+title: Uke 44 - Micro:bit
 aliases: 
-  - Uke 44 IKT
+  - Uke 44
 lang: nb-NO
 authors:
   - Sondre Grønås
 created: 2022-11-03 08:31:55
-updated: 2022-11-04 10:42:37
+updated: 2022-11-09 14:13:43
 ---
-# Uke 44 IKT
+# Uke 44 - Micro:bits
 Denne uken jobbet vi med:
 - Trådløs kommunikasjon via micro:bit
 - Lastet ned og prøvde programmeringspillet [7 Billion Humans](https://spill.iktim.no/7-Billion-Humans)

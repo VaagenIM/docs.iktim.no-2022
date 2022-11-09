@@ -1,14 +1,14 @@
 ---
-title: Uke 39 IKT - HTML, Nettverk
+title: Uke 39 - HTML, Nettverk
 aliases: 
-  - Uke 39 IKT
+  - Uke 39
 lang: nb-NO
 authors:
   - Sondre Grønås
 created: 2022-09-27 07:53:52
 updated: 2022-10-26 11:54:18
 ---
-# Uke 39 IKT
+# Uke 39 - HTML & Nettverk
 Denne uken jobbet vi med:
 - Mer om nettverk og dataoverføring
 - Forberede avslutning av HTML

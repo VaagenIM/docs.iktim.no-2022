@@ -1,14 +1,14 @@
 ---
-title: Uke 37 IKT - Datamaskinen, HTML
+title: Uke 37 - Datamaskinen, HTML
 aliases: 
-  - Uke 37 IKT
+  - Uke 37
 lang: nb-NO
 authors:
   - Sondre Grønås
 created: 2022-09-16 14:27:29
-updated: 2022-10-26 11:53:50
+updated: 2022-11-09 14:16:11
 ---
-# Uke 37 IKT
+# Uke 37 - Datamaskinen & HTML
 Denne uken jobbet vi med:
 - Vi lærte mer om datamaskinen og [[01 PC Shopping guide|planla hvordan vi skulle kjøpe en PC.]] (Linke til teori om komponenter)
 - Vi lærte om divs og sections i HTML, og lærte mer CSS

@@ -1,14 +1,14 @@
 ---
-title: Uke 36 IKT - HTML, Hero
+title: Uke 36 - HTML, Hero
 aliases: 
-  - Uke 36 IKT
+  - Uke 36
 lang: nb-NO
 authors:
   - Sondre Grønås
 created: 2022-09-10 21:25:15
-updated: 2022-10-26 11:53:43
+updated: 2022-11-09 14:16:22
 ---
-# Uke 36 IKT
+# Uke 36 HTML Heroside
 Denne uken jobbet vi med:
 - Vi snakket om en Hero / landingsside og Call To Action ([awebco.com](https://www.awebco.com/blog/hero-section/#:~:text=your%20own%20webpages.-,What%20is%20a%20Hero%20Section%3F,Why%20people%20should%20trust%20you))
 - Vi så på følgende nettsider:
