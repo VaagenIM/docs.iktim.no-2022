@@ -6,7 +6,7 @@ lang: nb-NO
 authors:
   - Sondre Grønås
 created: 2022-08-17 15:16:04
-updated: 2022-10-26 11:54:42
+updated: 2022-11-09 14:16:49
 ---
 # Uke 33 - Velkommen!
 Her er en liste over hva vi går gjennom denne uka, med noen godsaker i bunn 😄
