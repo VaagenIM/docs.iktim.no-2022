@@ -26,7 +26,9 @@ print("Hello Vågen!")
 ```
 
 ## Ukens innlegg
-- Ingen merkverdige artikler eller videoer denne uken.
+> [!WARNING]+ Is FAANG f**ked?
+> Code report om Facebook, Apple, Amazon, Netflix & Google sine oppsigelser.
+> <iframe width="560" height="315" src="https://www.youtube.com/embed/2pfcynxODJc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Utforskningslenker
 - Ingen merkverdige ting å utforske denne uken
