@@ -20,23 +20,33 @@ Denne uken jobbet vi med:
 
 ## Dagens kode
 ```python
-# Prosessen av å bestille pannekake med sirup  
-def bestill_pannekake():  
-    print("Hvilken sirup på pannekaken vil du ha?")  
-    print("Vi har sjokolade, vanilje eller tyttebær.")  
-    svar = input("Svaret ditt: ")  
-    print("En pannekake med " + svar + " sirup, kommer straks.")  
-  
-# Start av kode, __name__ gir meg en startknapp.  
-if __name__ == '__main__':  
-    print("Hva vil du ha?")  
-    print("1 for pannekake")  
-    print("2 for langpannekake")  
-    svar = input("Ditt svar: ")  
-    if svar == "1":  
-        bestill_pannekake()  
-    if svar == "2":  
-        # ??? Kod det selv.
+def bestill_pannekake():
+    print(' ')
+    print('Hvilken sirup vil du ha på panne kaken. ')
+    print('Vi har Sjokolade, vanilje eller tyttebær.')
+    svar= input('Svaret ditt:')
+    print('En pannekake med', svar, 'sirup, kommer straks.')
+
+def bestill_langpannekake():
+    print(' ')
+    print('Hvilken sirup vil du ha på lang pannekaken. ')
+    print('Vi har Sjokolade, vanilje eller tyttebær.')
+    svar = input('Svaret ditt:')
+    print('En pannekake med', svar, 'sirup, kommer straks.')
+
+# start av kode
+if __name__ == '__main__':
+    print('Hva vil du ha?')
+    print('1 for pannekake')
+    print('2 for langpannekake')
+    svar = input('Ditt svar:')
+    
+    if svar == '1':
+        bestill_pannekake()
+    elif svar == '2':
+        bestill_langpannekake()
+    else:
+        print('Velg mellom 1 og 2')
 ```
 
 ## Gjøremål
