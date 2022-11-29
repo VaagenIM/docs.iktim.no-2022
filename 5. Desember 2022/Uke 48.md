@@ -12,6 +12,7 @@ updated: 2022-11-29 17:04:29
 Denne uken jobbet vi med:
 - Vi logget inn på https://rapidapi.com/hub med vår GitHub konto 💻
 - Vi testet ulike APIer ved å velge `Python -> Requests` metoden 🐍
+- Vi lærte å navigere i [[JSON]] objekter i Python 📊 
 - Vi opprettet en funksjon for å hente værmeldingen gjennom en terminal 🌦
 - Vi så på hvordan vi kan lage et uendelighetsprogram gjennom en `while` loop/løkke ➰
 
