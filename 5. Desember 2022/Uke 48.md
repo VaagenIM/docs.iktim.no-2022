@@ -10,11 +10,11 @@ updated: 2022-11-30 22:02:16
 ---
 # Uke 48
 Denne uken jobbet vi med:
-- Vi snakket om hvordan maskiner kommuniserer ([[HTTP Metoder]] / Responser, 404/403/418/200, GET/POST) 🕸
+- Vi snakket om hvordan maskiner kommuniserer ([[HTTP Metoder]] / Responser, 404/403/418/200, [[GET]]/[[POST]]) 🕸
 - Vi logget inn på https://rapidapi.com/hub med vår GitHub konto 💻
 - Vi testet ulike APIer ved å velge `Python -> Requests` metoden 🐍
 - Vi lærte å navigere i [[JSON]] objekter i Python 📊 
-- Vi opprettet en funksjon for å hente værmeldingen gjennom en terminal 🌦
+- Vi lærte litt om lister og dictionaries
 - Vi så på hvordan vi kan lage et uendelighetsprogram gjennom en `while` loop/løkke ➰
 
 > [!TECH]+ Fun fact om API - Discord Bots!
