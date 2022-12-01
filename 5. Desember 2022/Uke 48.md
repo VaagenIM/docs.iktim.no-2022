@@ -144,7 +144,7 @@ min_funksjon("iceland")
 ```
 
 1. Funksjonen tar nå inn en parameter; `land`.
-2. Her erstatter vi `"usa"` med vår nye parameter; `land`.
+2. Her erstatter vi `"usa"` med vårt nye parameter; `land`.
 
 Hurra 🥳 - nå har vi en funksjon som henter data, basert på et eksternt parameter (land)!
 
