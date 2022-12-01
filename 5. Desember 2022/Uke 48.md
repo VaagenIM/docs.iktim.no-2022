@@ -122,11 +122,11 @@ Vi kan derfor gjøre om på funksjonen vår ved å endre parametre inn til funks
 import requests
 
 # Start av funksjon, parameter = land
-def min_funksjon(land): # (6)!
+def min_funksjon(land): # (1)!
 	url = "https://covid-193.p.rapidapi.com/history"
 	
 	# country = verdi av land, gitt av parameter
-	querystring = {"country":land,"day":"2020-06-02"} # (7)!
+	querystring = {"country":land,"day":"2020-06-02"} # (2)!
 	
 	headers = {
 		"X-RapidAPI-Key": "SIGN-UP-FOR-KEY",
@@ -143,8 +143,8 @@ min_funksjon("sweden")
 min_funksjon("iceland")
 ```
 
-6. Funksjonen tar nå inn en parameter; `land`.
-7. Her erstatter vi `"usa"` med vår nye parameter; `land`.
+1. Funksjonen tar nå inn en parameter; `land`.
+2. Her erstatter vi `"usa"` med vår nye parameter; `land`.
 
 Hurra 🥳 - nå har vi en funksjon som henter data, basert på et eksternt parameter (land)!
 
