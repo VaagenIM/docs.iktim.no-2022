@@ -6,7 +6,7 @@ lang: nb-NO
 authors:
   - Sondre Grønås
 created: 2022-11-29 17:04:27
-updated: 2022-11-30 22:02:16
+updated: 2022-12-01 09:23:20
 ---
 # Uke 48
 Denne uken jobbet vi med:
@@ -25,6 +25,13 @@ Denne uken jobbet vi med:
 > Her vil man finne funksjoner i Python som lar deg lese meldinger eller discord handlinger, samt sende meldinger tilbake, gjennom Python!
 > 
 > Se https://realpython.com/how-to-make-a-discord-bot-python/ for mer informasjon!
+
+> [!IMPORTANT]+ Ikke viktig å få med seg alt
+> Når vi lærer å kode, så vil det nesten være umulig å forstå alt med en gang, dette er vanlig!
+> 
+> Det blir dessverre mange løse tråder, vår jobb er å vite littegrann om dem, slik at vi vet om mulighetene, uten å nødvendigvis forstå dem helt. Vi trenger å vite søkeord - "request weather data from api" er mye bedre søkeord enn "get weather python", selv om det helt sikkert fungerer.
+> 
+> Vær derfor ikke bekymret om ikke alt faller naturlig på plass i hodet, selv de beste må google de enkleste ting og lære seg dem på ny en gang i blant.
 
 ## Onsdags kode
 På onsdag så vi på API'er på siden RapidAPI. API betyr Application Programming Interface, og er en metode for å kommunisere med en applikasjon via programmering. For eksempel i spillet Minecraft kan man referere til "blokker" via ulike metoder som objekter i programmering, da det er grensesnittet utviklerne har laget.
@@ -68,22 +75,28 @@ I snippeten er det generert kode for oss, men skal kun brukes for å teste endpo
 ```python
 # Start av funksjon
 def min_funksjon():
-	url = "https://covid-193.p.rapidapi.com/history"
+	url = "https://covid-193.p.rapidapi.com/history" # (1)!
 	
-	querystring = {"country":"usa","day":"2020-06-02"}
+	querystring = {"country":"usa","day":"2020-06-02"} # (2)!
 	
 	headers = {
-		"X-RapidAPI-Key": "SIGN-UP-FOR-KEY",
+		"X-RapidAPI-Key": "SIGN-UP-FOR-KEY", # (3)!
 		"X-RapidAPI-Host": "covid-193.p.rapidapi.com"
 	}
 	
-	response = requests.request("GET", url, headers=headers, params=querystring)
+	response = requests.request("GET", url, headers=headers, params=querystring) # (4)!
 	
-	print(response.text)
+	print(response.text) # (5)!
 
 # Bruk funksjonen
 min_funksjon()
 ```
+
+1. Endpointet, hvor dataen kommer fra
+2. Vår "query", hva kan vi spørre tjeneren om? Her kan vi velge `country` og `day`
+3. X-RapidAPI-Key er vårt brukernavn OG passord, denne får vi av RapidAPI når vi abonnerer på API'et. Uten denne får vi ingen tilgang.
+4. Her lagrer vi resultatet vi får gjennom å kjøre `requests.request` funksjonen, `GET` er metode for innhenting, `url` er sted, `headers` inneholder vår token (innlogging / autentikasjon), `params` er de ulike parametrene vi har lov til å redigere.
+5. Standard for å teste, skriver ut hele resultatet vi får fra serveren som tekst.
 
 Dersom vi nå bruker funksjonen `min_funksjon()`, vil koden kjøre som normalt, og vi vil få resultatet printet til konsollen i tekst (`print(response.text)`). Dette er nyttig for å teste ut, men vi ønsker som regel å gjøre noe mer med informasjonen vi mottar.
 
@@ -104,16 +117,16 @@ Problemet nå er at vi oppdaterer querystring, der kun den siste definisjonen gj
 
 Vi kan derfor gjøre om på funksjonen vår ved å endre parametre inn til funksjonen, som er strukturert med: `def <funksjon_navn>(<kommaseparerte parametre>):`
 
-```python
+```python hl_lines="5 9 21 22 23"
 # import av moduler
 import requests
 
 # Start av funksjon, parameter = land
-def min_funksjon(land):
+def min_funksjon(land): # (1)!
 	url = "https://covid-193.p.rapidapi.com/history"
 	
 	# country = verdi av land, gitt av parameter
-	querystring = {"country":land,"day":"2020-06-02"}
+	querystring = {"country":land,"day":"2020-06-02"} # (1)!
 	
 	headers = {
 		"X-RapidAPI-Key": "SIGN-UP-FOR-KEY",
@@ -129,6 +142,9 @@ min_funksjon("norway")
 min_funksjon("sweden")
 min_funksjon("iceland")
 ```
+
+1. Funksjonen tar nå inn en parameter; `land`.
+2. Her erstatter vi `"usa"` med vår nye parameter; `land`.
 
 Hurra 🥳 - nå har vi en funksjon som henter data, basert på et eksternt parameter (land)!
 
