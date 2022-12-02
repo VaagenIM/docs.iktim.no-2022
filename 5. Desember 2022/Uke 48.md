@@ -6,7 +6,7 @@ lang: nb-NO
 authors:
   - Sondre Grønås
 created: 2022-11-29 17:04:27
-updated: 2022-12-01 09:23:20
+updated: 2022-12-02 22:22:26
 ---
 # Uke 48
 Denne uken jobbet vi med:
@@ -175,29 +175,83 @@ Hurra 🥳 - nå har vi en funksjon som henter data, basert på et eksternt para
 ## Fredags kode
 På fredag skal vi se på: `return` funksjone, `for` og `while` løkker. Vi skal også se litt mer på dataobjekter (Lister / Dictionaries).
 
-Korte eksempler, bedre forklaringer kommer:
+### Funksjoner - Dad joke funksjoner
+> [!TECH]+ Video om å lage funksjoner fra ArjanCodes:
+> <iframe width="560" height="315" src="https://www.youtube.com/embed/yatgY4NpZXE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Return funksjonen:
-```python
-def test():
-    return "Jeg returnerer tekst"
+Vi laget noen funksjoner i en `util.py` fil (Utilities), som vi importerer til en annen fil (`bot.py`). En funksjon er noe som gjør noe, og kan returnere en verdi basert på det vi ønsker. Vi programmerte en funksjon som gir oss en tilfeldig dad-joke, og en funksjon som lar oss legge til flere dad-jokes.
 
-def summer(tall1, tall2):
-    return tall1 + tall2
+```python title="util.py"
+import random # (1)!
 
-print(test())
-print(summer(5, 3))
+# Liste over dadjokes
+dadjokes = [
+    "Hva spiser frukter på ferie, Pæreis",
+    "Jeg er redd for kalenderen, dens dager er talte.",
+    "En blind mann går inn i en bar, og en bord og en stol."
+]
 
-x = test()  # x får verdien fra test(), som blir returnert
-print(x)
+def get_dadjoke() -> str: # (2)
+	"""Returns a random dad joke""" # (3)!
+	# dadjokes = load_dadjokes() (4)
+	return random.choice(dadjokes)
 
-# Resultat:
-# Jeg returnerer tekst
-# 8
-# Jeg returnerer tekst
+def add_dadjoke(joke: str): # (5)
+	dadjokes.append(joke)
+	# save_dadjokes(dadjokes) (6)
 ```
+1. `random` modulen er en pakke som lar oss generere tilfeldigheter, f.eks. tilfeldig tall, eller objekt i liste
+2. `-> str` forteller utvikleren / PyCharm om hva funksjonen generer, som er tekst (`return <tekst>`)
+3. Dette er en docstring, som er en forklaring på hva funksjonen gjør til mennesker som leser den
+4. Hypotetisk funksjon, vi kunne ha lastet inn dadjokes fra et API, eller fra en tekstfil
+5. `joke: str` betyr at verdien som blir sendt inn i funksjonen (joke) må være en streng/tekst
+6. Hypotetisk funksjon, vi kunne ha lagret nye vitser til f.eks. en tekstfil.
 
-Lister
+> [!CODE]- Ekstra `return` eksempel
+> ```python
+> def test():
+ >    return "Jeg returnerer tekst"
+> 
+> def summer(tall1, tall2):
+ >    return tall1 + tall2
+> 
+> print(test())
+> print(summer(5, 3))
+> 
+> x = test()  # x får verdien fra test(), som blir returnert
+> print(x)
+> 
+> # Resultat:
+> # Jeg returnerer tekst
+> # 8
+> # Jeg returnerer tekst
+> ```
+
+Koden i `util.py` gjør ingenting når man kjører den, men man kan importere funksjonene der vi skal ha vår chatbot, i en fil som heter `bot.py` i samme mappe.
+```python title="bot.py"
+from util import * # (1)!
+
+# Onboarding
+navn = input('Hei, hva heter du? ')
+print(f'Hyggelig å treffe på deg, {navn}. Start med å skrive ?help')
+
+# Start av chatbot
+while True: # (2)!
+	match input('$: '): # (3)!
+		case '?help': #(4)!
+			print('Jeg kan fortelle deg dadjokes, skriv ?joke')
+		case '?joke':
+			print(get_dadjoke()) #(5)!
+```
+1. Importer alle funksjoner fra `util.py`, slik at vi kan bruke dem
+2. `while True:` er en løkke som vil gjenta seg for alltid (til programmet avsluttes), eller til koden treffer på en `break` funksjon
+3. `match` funksjonen lar deg enkelt sammenligne en verdi med ulikt utfall. Den fungerer på nesten samme måte som `if input() == '?help'`, men har mange fordeler.
+4. `case` er koden som vil kjøre dersom teksten matcher input fra bruker
+5. Her bruker vi funksjonen fra `util.py`, `get_dadjoke()`!
+
+### Lister
+Lister er en av de store datatypene i Python som defineres av firkanta braketter (`[]`) og inneholder flere verdier i en og samme variabel. Se [[03 Tuples og lister|Tuples og lister]]. I eksempelet over, har vi laget en liste over dadjokes. Objekter i en liste er separert med komma.
+
 ```python
 import random
 min_liste = ['Hei!', 'Hei sveis!', 'Hallo!', 'Howdy!']
@@ -205,11 +259,20 @@ min_liste = ['Hei!', 'Hei sveis!', 'Hallo!', 'Howdy!']
 print(min_liste[0])  # Hei!
 print(min_liste[2])  # Hallo!
 print(random.choice(min_liste))  # Tilfeldig hilsen
+
+for hilsen in min_liste:
+	print(hilsen)  # Printer alle de unike hilsene en etter en, i en løkke.
 ```
 
-Dictionaries, som lister, men med nøkler / navn
+### Dictionaries / Ordlister
+Dictionaries er det viktigste og største dataformatet vi har, og kalles også ofte for [[JSON]]. (Se også [[01 Dataformater|Dataformater]]). Det er i dette formatet vi blant annet jobber med APIer eller eksterne ressurser.
+
+I motsetning til vanlige lister som over, definerer man verdier med nøkler / navn. Eksempler på nøkler kan være brukernavn, passord, e-post og lignende, i en liste over brukere. Merk at verdiene til nøkler kan være nye ordlister eller lister, som kan by på mange muligheter!
+
+Ved hjelp av `for` løkker kan man også gå gjennom alle enheter i en liste/ordliste, og utføre handlinger på flere datasett på samme tid. Nedenfor finner du et eksempel som gjør litt av hvert.
+
 ```python
-min_dict = {
+min_dict = { # (1)
 	'navn': 'Ola Nordmann',
 	'alder': 19,
 	'land': 'Norge'
@@ -219,12 +282,12 @@ print(min_dict['navn'])
 print(min_dict['alder'])
 print(min_dict['land'])
 
-min_liste_med_dict = [
+min_liste_med_dict = [ # (2)!
 	{
 		'navn': 'Jens Julenisse',
 		'alder': 19,
 		'land': 'Danmark'
-	},
+	}, # (3)!
 	{
 		'navn': 'Kari Svenske',
 		'alder': 18,
@@ -241,10 +304,13 @@ print(min_dict['ny-nøkkel'])  # hallo
 # Legg til i en liste
 min_liste_med_dict += min_dict
 # Legger til "Ola Nordmann" i listen med Jens Julenisse og Kari Svenske
-
 ```
+1. Ordlister / dictionaries defineres av curly-brackets `{}`, der nøkkel/verdi settene skilles ved komma.
+2. Du kan også lage lister som inneholder ordlister! Nyttig dersom man har en liste over for eksempel brukere
+3. Komma separer enhetene! Det er viktig!
 
-For løkker:
+### For løkker
+For løkker er **UTROLIG** viktige og nyttige, de lar oss iterere (gå gjennom en og en) verdier i lister, eller ordlister. Merk at navnet som settes mellom for/in (`for <X> in`) , er valgfri.
 ```python
 # Går gjennom alle objekter i listen, og representerer dem med variabelnavn "person"
 for person in min_liste_med_dict:
@@ -255,7 +321,8 @@ for restaurant in liste_over_restaurantdata_fra_api:
 	print(restaurant['name'] + " rating: " + restaurant['rating'])
 ```
 
-While løkker:
+### While løkker
+While løkker er gjentagende kode som stopper når tilstanden ikke lenger er sann. Ofte bruker man en while løkke som sjekker om `True` er sant, som det alltid vil være. Formålet med det er å definere kode som aldri stopper å kjøre. Dette gjelder alle applikasjoner som ikke stopper uten brukeren trykker stopp, som for eksempel i spill.
 ```python
 # mens sant = sant, (som alltid er tilfelle), vil programmet gjenta seg selv for alltid
 while True:
@@ -263,32 +330,122 @@ while True:
 print("Kommer aldri her.")
 ```
 
-Bruk av while løkker i chatbot:
+Bryt ut av en while løkke med `break`, eller når en tilstand er møtt:
 ```python
-import random
-
-# komma separert liste med tekststrenger
-dadjokes = [
-	'Where do fruits go on vacation? Pear-is!',
-	'What does a lemon say when it answers the phone? Yellow!'
-]
-
-print("Velkommen til Chatbot 2.0")
-print("Spør meg om hjelp via ?help, eller ?q for å avslutte")
 while True:
-    svar = input():
-    if svar == "?q":
-	    break  # avslutt while løkken
-	elif svar == "?help":
-		print("Funksjoner: ?dadjoke")
-	elif svar == "?dadjoke":
-		print(random.choice(dadjokes))
+	print('Jeg bryter meg ut')
+	break
+print('Im free!')
 
-print("Hade!")
+i = 0
+while i != 10:  # mens i ikke er 10
+	i += 1  # legg til 1 på i
+	print('i er enda ikke 10...')
+print('Nå er i 10!')
 ```
 
+### Dagens kode
+Vi lagde 2 dokumenter, `bot.py` og `util.py`. Begge må ligge i samme mappe, slik at filene finner hverandre.
+> [!CODE]- bot.py
+> Her ligger det litt ekstra som ikke er gått gjennom over, men som vi gikk gjennom litt ekstra i timen. Det gjelder:
+> 
+> - Bruk av `subprocess` - et eksempel på at det går an å gjøre ting på maskinen, som å åpne en kalkulator app via en chatbot
+> - Legge til ekstra nøkler/verdier i en ordliste (hysj = vær stille)
+> - Legge til flere alternative skrivemåter i en `match/case` del via `|` tegnet.
+> - En funksjon (`roast_me(navn, alder)`) som sender informasjon fra bot.py til en util.py funksjon
+> 
+> ```python title="bot.py"
+> from util import *
+> import subprocess
+> 
+> kommandoer = {
+>     '?joke': 'Jeg forteller en dårlig dad-joke.',
+>     '?addjoke': 'Legg til en vits i dadjokes listen.',
+>     '?roastme': 'Bli roastet.',
+>     'quit': 'Avslutt samtalen.',
+> }
+> 
+> kommandoer['hysj'] = "vær stille."
+> 
+> # Onboarding
+> navn = input("Hva heter du? ")
+> if not navn:
+>     raise ValueError
+> print("Hei, " + navn)
+> alder = input("Hvor gammel er du? ")
+> 
+> # Intro
+> print("Skriv ?hjelp for å komme i gang.")
+> # Start robot
+> while True:
+>     match input("$: "):
+>         case "?hjelp":
+>             print("Jeg kan følgende kommandoer:")
+>             for kommando in kommandoer:
+>                 print(kommando + " - " + kommandoer[kommando])
+>         case "?joke":
+>             print(get_dadjoke())
+>         case "?addjoke":
+>             joke = input("Skriv vitsen: ")
+>             add_dadjoke(joke)
+>             print("Da er den lagt til.")
+>         case "?roastme":
+>             do_roast(navn, alder)
+>         case 'calc':
+>             subprocess.call('calc')
+>         case 'quit' | 'exit' | 'q' | 'avslutt' | '?q' | '?quit':
+>             break
+> ```
+
+> [!CODE]- util.py
+> Inkluderer en ekstra funksjon, `roast_me(navn, alder)` som har en punchline over tid ved å bruke `time` modulen. 
+> 
+> ```python title="util.py"
+> import random
+> import time
+> 
+> dadjokes = [
+>     "Hva spiser frukter på ferie, Pæreis",
+>     "Jeg er redd for kalenderen, dens dager er talte.",
+>     "En blind mann går inn i en bar, og en bord og en stol."
+> ]
+> 
+> def get_dadjoke() -> str:
+>     """Returns a random dad joke"""
+>     # load_jokes()
+>     return random.choice(dadjokes)
+> 
+> def add_dadjoke(joke: str):
+>     dadjokes.append(joke)
+>     # save_jokes()
+> 
+> def load_jokes():
+>     print("lastet inn (hypotetisk)")
+> 
+> def save_jokes():
+>     print("lagret (hypotetisk)")
+> 
+> def do_roast(navn, alder):
+>     roasts = [
+>         f'Hvem er {alder} år og hører på Justin Bieber?',
+>         f'Hva står på 2 bein og bråker i timen?',
+>     ]
+> 
+>     print(random.choice(roasts))
+>     time.sleep(0.5)
+>     print('..')
+>     time.sleep(0.5)
+>     print('...')
+>     time.sleep(0.5)
+>     print(navn + '!!!!')
+> ```
+
 ## Gjøremål
-Snart er det på tide å definere vårt eget prosjekt som skal jobbes med frem til jul!
+Frem til jul skal dere definere et Python prosjekt, det kan være å opprette funksjoner på chatteroboten din, til å for eksempel hente data gjennom et API, eller legge til andre spenstige ting, som å kunne spille stein/saks/papir med en robot!
+
+Du trenger ikke å forholde deg til chatteroboten din om du har andre ideer. Om du ønsker å teste andre språk - så må du gjerne det! Du finner oppgavetekst med litt inspirasjon på Teams.
+
+<mark style="background: #FFF3A3A6;">Husk å last opp endringene dine til GitHub underveis, og eventuelt legg til informasjon om planene dine i README.md!</mark>
 
 > [!TECH]+ Motivasjon
 > <iframe width="315" height="560" src="https://www.youtube.com/embed/H4yqjCy0_Z8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
