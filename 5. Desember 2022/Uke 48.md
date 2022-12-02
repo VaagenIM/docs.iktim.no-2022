@@ -265,14 +265,14 @@ for hilsen in min_liste:
 ```
 
 ### Dictionaries / Ordlister
-Dictionaries er det viktigste og største dataformatet vi har, og kalles også ofte for [[JSON]]. (Se også [[01 Dataformater|Dataformater]]). Det er i dette formatet vi blant annet jobber med APIer eller eksterne ressurser.
+Dictionaries er det viktigste og største dataformatet vi har, og kalles også ofte for [[JSON]]. (Se også [[01 Dataformater|Dataformater]]). Det er i dette formatet vi blant annet jobber med APIer eller eksterne ressurser. Ordlister defineres med curly brackets (`{}`).
 
 I motsetning til vanlige lister som over, definerer man verdier med nøkler / navn. Eksempler på nøkler kan være brukernavn, passord, e-post og lignende, i en liste over brukere. Merk at verdiene til nøkler kan være nye ordlister eller lister, som kan by på mange muligheter!
 
 Ved hjelp av `for` løkker kan man også gå gjennom alle enheter i en liste/ordliste, og utføre handlinger på flere datasett på samme tid. Nedenfor finner du et eksempel som gjør litt av hvert.
 
 ```python
-min_dict = { # (1)
+min_dict = { # (1)!
 	'navn': 'Ola Nordmann',
 	'alder': 19,
 	'land': 'Norge'
@@ -310,7 +310,7 @@ min_liste_med_dict += min_dict
 3. Komma separer enhetene! Det er viktig!
 
 ### For løkker
-For løkker er **UTROLIG** viktige og nyttige, de lar oss iterere (gå gjennom en og en) verdier i lister, eller ordlister. Merk at navnet som settes mellom for/in (`for <X> in`) , er valgfri.
+For løkker er **UTROLIG** viktige og nyttige, de lar oss iterere (gå gjennom en og en) verdier i lister, eller ordlister. Merk at navnet som settes mellom for/in (`for <X> in`) , er valgfritt.
 ```python
 # Går gjennom alle objekter i listen, og representerer dem med variabelnavn "person"
 for person in min_liste_med_dict:
