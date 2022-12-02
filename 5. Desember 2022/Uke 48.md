@@ -173,7 +173,7 @@ Hurra 🥳 - nå har vi en funksjon som henter data, basert på et eksternt para
 > ```
 
 ## Fredags kode
-På fredag skal vi se på: `return` funksjone, `for` og `while` løkker. Vi skal også se litt mer på dataobjekter (Lister / Dictionaries).
+På fredag gikk vi gjennom mye rart! Mange dataobjekter (Lister og Dictionaries/JSON), løkker og match/case. Merk at det kan nok føles som mye, men man må nesten hoppe i det! ***Ikke vær redd for å google, vi kommer til å gjøre mange feil - og det er faktisk en positiv ting.***
 
 ### Funksjoner - Dad joke funksjoner
 > [!TECH]+ Video om å lage funksjoner fra ArjanCodes:
@@ -441,11 +441,12 @@ Vi lagde 2 dokumenter, `bot.py` og `util.py`. Begge må ligge i samme mappe, sli
 > ```
 
 ## Gjøremål
+> [!TECH|inline end]+ Motivasjon
+> <iframe width="315" height="560" src="https://www.youtube.com/embed/H4yqjCy0_Z8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 Frem til jul skal dere definere et Python prosjekt, det kan være å opprette funksjoner på chatteroboten din, til å for eksempel hente data gjennom et API, eller legge til andre spenstige ting, som å kunne spille stein/saks/papir med en robot!
 
 Du trenger ikke å forholde deg til chatteroboten din om du har andre ideer. Om du ønsker å teste andre språk - så må du gjerne det! Du finner oppgavetekst med litt inspirasjon på Teams.
 
 <mark style="background: #FFF3A3A6;">Husk å last opp endringene dine til GitHub underveis, og eventuelt legg til informasjon om planene dine i README.md!</mark>
 
-> [!TECH|inline]+ Motivasjon
-> <iframe width="315" height="560" src="https://www.youtube.com/embed/H4yqjCy0_Z8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
