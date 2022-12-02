@@ -442,7 +442,7 @@ Vi lagde 2 dokumenter, `bot.py` og `util.py`. Begge må ligge i samme mappe, sli
 
 ## Gjøremål
 > [!TECH|inline end]+ Motivasjon
-> <iframe width="315" height="560" src="https://www.youtube.com/embed/H4yqjCy0_Z8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> <iframe width="150" height="280" src="https://www.youtube.com/embed/H4yqjCy0_Z8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Frem til jul skal dere definere et Python prosjekt, det kan være å opprette funksjoner på chatteroboten din, til å for eksempel hente data gjennom et API, eller legge til andre spenstige ting, som å kunne spille stein/saks/papir med en robot!
 
