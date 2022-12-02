@@ -447,5 +447,5 @@ Du trenger ikke å forholde deg til chatteroboten din om du har andre ideer. Om 
 
 <mark style="background: #FFF3A3A6;">Husk å last opp endringene dine til GitHub underveis, og eventuelt legg til informasjon om planene dine i README.md!</mark>
 
-> [!TECH]+ Motivasjon
+> [!TECH|inline]+ Motivasjon
 > <iframe width="315" height="560" src="https://www.youtube.com/embed/H4yqjCy0_Z8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
