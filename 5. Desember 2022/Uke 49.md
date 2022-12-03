@@ -28,7 +28,7 @@ def adder():
     print('La oss plusse tall!')
     tall1 = input('Tall 1: ')
     tall2 = input('Tall 2: ')
-    total = tall1 + tall2
+    total = int(tall1) + int(tall2)
     print(tall1 + ' + ' tall2 ' = ' total)
 
 print('Skriv ?hjelp for å starte, ?quit for å avslutte')
