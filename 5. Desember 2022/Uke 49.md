@@ -197,7 +197,7 @@ Merk at selv om koden er 20 ganger lengre, så gjør den til syvende og sist det
 >   
 > while True:  
 >     # Get user input, and send it to the run_command function  
->     user_input = input('')  
+>     user_input = input('> ')  
 >     # Why not just put this as part of the pattern matching? Because it's more readable to have a separate function  
 >     # I.e. we might want to use a GUI instead of the console, or use voice recognition instead of typing, etc.  
 >     # Connecting to a server to get the user input is also a possibility in the future this way, such as Discord bots  
