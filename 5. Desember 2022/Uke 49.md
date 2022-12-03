@@ -121,7 +121,7 @@ Merk at selv om koden er 20 ganger lengre, så gjør den til syvende og sist det
 > }  
 >   
 >   
-> def quit_bot(msg: str = ''):  
+> def quit_bot(msg: str = '') -> None:  
 >     """Exits the chatbot program"""  
 >     # Why not use sys.exit() directly? Because we might want to change how the program exits in the future  
 >     if msg:  
@@ -129,21 +129,21 @@ Merk at selv om koden er 20 ganger lengre, så gjør den til syvende og sist det
 >     sys.exit(0)  
 >   
 >   
-> def send_message(message: str):  
+> def send_message(message: str) -> None:  
 >     """Prints a message to the console"""  
 >     # Why not use print() directly? Because we might want to change how messages are displayed in the future  
 >     # I.e. we might want to add a timestamp or a username, or send the message to a server instead of printing it  
 >     print(message)  
 >   
 >   
-> def display_commands():  
+> def display_commands() -> None:  
 >     """Displays all available commands"""  
 >     send_message('Available commands:')  
 >     for command, description in commands_help.items():  
 >         send_message(f'{command} - {description}')  
 >   
 >   
-> def cmd_add(numbers: list) -None:  
+> def cmd_add(numbers: list) -> None:  
 >     """Adds two or more numbers"""  
 >     # Why not just put this code in the run_command function? Because it's more readable to have a separate function  
 >     if not numbers:  
@@ -155,7 +155,7 @@ Merk at selv om koden er 20 ganger lengre, så gjør den til syvende og sist det
 >     send_message(f'The sum of {" + ".join(numbers)} is {total}')  
 >   
 >   
-> def cmd_subtract(numbers: list) -None:  
+> def cmd_subtract(numbers: list) -> None:  
 >     """Subtracts two or more numbers"""  
 >     if not numbers:  
 >         send_message('Please provide at least two numbers to subtract')  
@@ -166,7 +166,7 @@ Merk at selv om koden er 20 ganger lengre, så gjør den til syvende og sist det
 >     send_message(f'The difference of {" - ".join(numbers)} is {total}')  
 >   
 >   
-> def cmd_download(url: str):  
+> def cmd_download(url: str) -> None:  
 >     """Downloads a file from the internet"""  
 >     # This is just a placeholder function for now  
 >     send_message(f'Downloading {url}')  
@@ -174,7 +174,7 @@ Merk at selv om koden er 20 ganger lengre, så gjør den til syvende og sist det
 >     send_message('Download complete')  
 >   
 >   
-> def run_command(command: str):  
+> def run_command(command: str) -> None:  
 >     """Takes an input command and runs it if it exists in the simple_commands dict, or matches a pattern"""  
 >     # Why run_command instead of just putting this code in the main loop? Because it's more readable to have a separate function  
 >   
