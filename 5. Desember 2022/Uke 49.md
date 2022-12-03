@@ -93,6 +93,7 @@ Merk at selv om koden er 20 ganger lengre, så gjør den til syvende og sist det
 
 > [!CODE]- "Komplisert" kode, lang
 > Obs: Merk at denne koden er på ingen måte "god" den heller, men veldig generell og verbose. Her finnes ingen fasit.
+> 
 > ```python
 > import sys  # sys.exit() is called when the user types 'quit' or 'exit'  
 > import time  # time.sleep() is used to simulate a delay when downloading a file  
