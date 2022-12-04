@@ -12,6 +12,8 @@ updated: 2022-12-03 10:21:07
 Denne uken jobbet vi med:
 - Valgfri koding
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/brffDCE5hXs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Eksempler på kode for ulike nivå
 Nå skal dere definere et prosjekt som dere kan jobbe med, og prøve å lære mer på egenhånd. Men husk - vi er kun i vg1, så ikke legg opp høye forventninger - det gjør ikke vi heller 😄.
 
