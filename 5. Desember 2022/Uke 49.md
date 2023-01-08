@@ -6,7 +6,7 @@ lang: nb-NO
 authors:
   - Sondre Grønås
 created: 2022-12-03 09:09:48
-updated: 2022-12-04 20:18:18
+updated: 2023-01-08 15:00:46
 ---
 # Uke 49
 Denne uken jobbet vi med:
