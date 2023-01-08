@@ -34,7 +34,7 @@ I tillegg kan man bekrefte at endringer i kode ikke ødelegger andre deler av ap
 
 Man kan aldri skrive for mange tester, og det er ofte hvor nyansatte IT-folk starter ut. Kvalitetssikring er en viktig del av å utvikle en applikasjon som fungerer.
 
-### Eksempler på test
+### Eksempel funksjon
 Se for deg at vi har en simpel funksjon: vi selger en vare, som betyr at vi sitter igjen med mer penger når vi gjennomfører salget enn det vi hadde fra før.
 
 ```python title="main.py"
@@ -60,6 +60,7 @@ ny_lommebok = selg_vare(pris, lommebok)
 print(f"Du har nå {ny_lommebok}kr i lommeboken.")
 ```
 
+### Problemer med funksjonen
 Men hvordan kan vi vite at funksjonen fungerer uten problem? Her er noen scenarier hvor koden vil gjøre det vi ikke forventer av den:
 - Pris på vare er `100kr` (ikke `100`)
 - Pris på vare er `100,00` (ikke `100.00`)
@@ -67,9 +68,11 @@ Men hvordan kan vi vite at funksjonen fungerer uten problem? Her er noen scenari
 - Pris på vare er `quit`
 - Lommebok er `100kr` (ikke `100`)
 
+### Eksempel på tester
 Koden slik den er nå kan produsere uønskede resultater, men ved å skrive en test kan vi sette opp funksjonen med en påstand/forventning av resultat, altså det vi ønsker at koden skal gjøre - dette er ofte "åpenbart", men fremdeles essensielt for å bekrefte at alt virker.
 
 ```python title="test_main.py"
+import pytest
 from main import selg_vare
 
 def test_selg_vare_standard():
@@ -102,6 +105,7 @@ Merk at man kan bruke alle ulike sammenligningsoperatører (`==` er lik, `>` min
 
 Nå gjenstår det kun å kjøre testene, og eventuelt korrigere koden slik at testene blir godkjent! (Lettere sagt enn gjort).
 
+### Rette opp koden
 Eksempel på håndtering av negative tall gjennom en if-sjekk (se [Guard-clauses](https://medium.com/lemon-code/guard-clauses-3bc0cd96a2d3)):
 
 ```python title="main.py"
