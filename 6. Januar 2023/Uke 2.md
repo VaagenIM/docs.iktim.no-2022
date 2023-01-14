@@ -6,7 +6,7 @@ lang: nb-NO
 authors:
   - Sondre Grønås
 created: 2023-01-14 09:44:40
-updated: 2023-01-14 10:50:10
+updated: 2023-01-14 11:55:56
 ---
 # Uke 2
 Denne uken jobbet vi med:
@@ -163,7 +163,7 @@ ola.motta_epost = False
 > [!IMPORTANT]+ Kvaliteten på koden
 > Koden er på ingen måter "god", men et eksempel på hvordan man lager en class, og hvordan man kan implementere funksjoner eller verdier som er til felles for et objekt. For eksempel kan en person ha verdiene `fornavn, etternavn, alder, fødselsdato, fødested, høyde, blodtype, nasjonalitet, etc.` som kan ligge inne i en `Person` klasse.
 > 
-> ## Eksempel
+> ### Eksempel
 > Man kan utvide funksjoner eller andre verdier basert på verdiene inne i objektet, for eksempel så kan en slik klasse generere en verdi `fullt_navn` basert på `fornavn` og `etternavn`:
 > ```python
 > class Person:
@@ -183,7 +183,7 @@ ola.motta_epost = False
 >  # alO
 > ```
 
-Obs. det er tusenvis av måter å forbedre koden under på, nederst kan du lese om noen av dem.
+Obs. det er tusenvis av måter å forbedre koden under på!
 
 ```python title="main.py"
 import random
@@ -285,85 +285,176 @@ mark.punch(200, bob)
 bob.punch(1000, mark)
 ```
 
-```python title="spill_class.py"
-from enum import Enum
+### Ideer til karakterkode:
+Her finnes det mange muligheter! Tenk deg at `Karakter` klassen har følgende verdier:
+- `strength` - sier noe om hvor mye skade en kan ta
+- `armor` - demper skade man kan ta (bør ikke gå i minus!!)
+- `crit_chance` - dobbel skade?
+
+Tenk muligheter - flamme er X sterkere mot gress, vann slår flamme, osv. Hvordan kan en slik logikk se ut?
+
+Ved å bruke disse verdiene kan man endre `punch` funksjonen til å ikke trenge motta en `skade` verdi, den kan heller basere seg på de andre verdiene:
+
+```python
+	def punch(self, motstander):
+		skade = self.strength - motstander.armor
+		motstander.health -= skade
+		if not motstander.is_alive:
+			print(f'{motstander.name} er død.')
+
+# Test kode, kan erstattes med grafikk + kontroller
+bob.punch(mark)
+mark.punch(bob)
+```
+
+Andre funksjoner:
+- `eat` - spis noe, få mer liv
+- `level_up` - øk styrke og beskyttelse, få mer liv?
+- Fantasien setter grenser.
+
+### Inventar koden
+Jeg har gjort om mye på inventarkoden, den er egentlig altfor kompleks for VG1, men det som skulle være et forenklet eksempel ble egentlig bare for komplisert.
+
+Her er et litt mer realistisk eksempel på inventar klasser:
+
+```python title="inventory.py"
 from dataclasses import dataclass
 
-HOTBAR = 9
-INVENTORY = 3 * 9
-
-class ItemFlags(Enum):
-    PLACEABLE = 0
-    INTERACTABLE = 1
-    STACKABLE = 2
-    WEARABLE = 3
-    CONSUMABLE = 4
-
-class ArmorType(Enum):
-    HELM = 0
-    CHESTPLATE = 1
-    LEGGINGS = 2
-    BOOTS = 3
-    SHIELD = 4
 
 @dataclass
 class Item:
-    id: int
-    name: str
-    description: str
-    flags: list[ItemFlags]
-    count: int = 1
-    max_stack: int = 64
+	name: str
+	value: int = 0
 
-    def interact(self):
-        print(f'Kan ikke interacte med {self.name}.')
+	# Så lenge verdiene har standardverdier så vil man kunne legge til
+	# flere verdier uten å måtte endre på koden andre steder i klassen.
+	healing_value: int = 0
+
+	# TODO: Legg til flere attributter her!
+
+	# Koble gjenstanden til en funksjon, funksjonen tar inn seg selv som parameter
+	# (Lambda er litt avansert, men det er bare en funksjon som ikke har navn)
+	# (Du kan lese mer om lambda her: https://www.w3schools.com/python/python_lambda.asp)
+	right_click_action: callable = lambda self: print(f'You right clicked {self.name}')
+	on_drop_action: callable = lambda self: print(f'You dropped {self.name}')
+
+	def right_click(self):
+		self.right_click_action(self)
+
+	def drop(self):
+		self.on_drop_action(self)
 
 
-class InteractableItem(Item):
-    def interact(self):
-        print(f'Du har {self.count} {self.name}')
-        self.count -= 1
-        print(f'Du interagerte med {self.name}')
-        if self.count == 0:
-            print(f'Du er tom for {self.name}')
-        else:
-            print(f'Du har {self.count} {self.name} igjen.')
+@dataclass
+class InventorySlot:
+	item: Item = Item(name='Nothing')
 
-ITEMS = [
-    Item(id=0,
-         name='Luft',
-         description='Ingenting',
-         flags=[ItemFlags.STACKABLE]),
-    InteractableItem(id=1,
-                     name='Egg',
-                     description='En egg',
-                     flags=[ItemFlags.INTERACTABLE])
-]
 
-inventar = {
-    '0': InteractableItem(
-        id=1,
-        name="Egg",
-        description="Et egg",
-        flags=[ItemFlags.INTERACTABLE,
-               ItemFlags.CONSUMABLE],
-        count=64
-    ),
-    '1': Item(
-        id=0,
-        name="Luft",
-        description='Ingenting',
-        flags=[ItemFlags.WEARABLE],
-        count=2
-    )
-}
+@dataclass
+class Inventory:
+	slots: int = 1
+	content: dict = dict
 
-if __name__ == '__main__':
-    current_item = '0'
-    inventar.get(current_item).interact()
+	def __post_init__(self):
+		"""Generer en tom inventar med riktig antall slots"""
+		self.content = {}
+		for i in range(self.slots):
+			self.content[i] = InventorySlot()
 
-    current_item = '1'
-    inventar.get(current_item).interact()
-    print(inventar.get(current_item))
+
+# Eksempel på bruk funksjoner som vi kan koble til gjenstander
+def eat(item):
+	if item.healing_value < 0:
+		print(f'You ate {item.name}, but it was poisonous! You lost {item.healing_value} health')
+	elif item.healing_value > 0:
+		print(f'You ate the {item.name} and gained {item.healing_value} health')
+	else:
+		print('Tasty!')
+
+
+def drink(item):
+	if item.healing_value < 0:
+		print(f'You drank {item.name}, but it was poisonous! You lost {item.healing_value} health')
+	elif item.healing_value > 0:
+		print(f'You drank the {item.name} and gained {item.healing_value} health')
+	else:
+		print('Refreshing!')
+
+
+def stub_toe(item):
+	print(f'You stubbed your toe when dropping your {item.name}')
+
+
+# Lag noen gjenstander (Vanligvis ville vi brukt en database for dette)
+apple = Item(name='Apple', value=10, healing_value=-5, right_click_action=eat)
+banana = Item(name='Banana', value=5, healing_value=3, right_click_action=eat)
+water = Item(name='Water', value=5, right_click_action=drink)
+healing_potion = Item(name='Healing potion', value=50, healing_value=20, right_click_action=drink)
+sword = Item(name='Sword', value=100, on_drop_action=stub_toe)
+
+# Lag en inventory med 12 slots
+inventory = Inventory(slots=12)
+
+# Legg til noen gjenstander
+inventory.content[0].item = apple
+inventory.content[1].item = banana
+inventory.content[2].item = sword
+inventory.content[3].item = water
+inventory.content[10].item = healing_potion
+
+# Skriv ut inventory
+print('Inventory:')
+for slot in inventory.content.values():
+	print(f'{slot.item.name}')
+
+# Bruk gjenstander (Dette er bare eksempelkode, vanligvis ville
+# vi koblet dette til en knapp på tastaturet, eller en knapp på skjermen)
+inventory.content[0].item.right_click()
+inventory.content[1].item.right_click()
+inventory.content[2].item.right_click()
+inventory.content[2].item.drop()
+inventory.content[3].item.right_click()
+inventory.content[10].item.right_click()
 ```
 
+Merk at vi kan kombinere klasser:
+
+```python title="character.py"
+from inventory import Inventory, Item  # Denne henter fra inventory.py
+from dataclasses import dataclass
+
+
+@dataclass
+class Character:
+    health: int = 50
+
+    selected_item: int = 0
+    inventory: Inventory = Inventory(slots=36)
+
+    def right_click(self):
+        self.inventory.content[self.selected_item].item.right_click()
+
+    def eat(self, item):
+        self.health += item.healing_value
+        print(f'You ate the {item.name} and gained {item.healing_value} health')
+        print(f'Your health is now {self.health}')
+
+# Eksempelkode:
+
+def eat(item):
+    character.eat(item)
+
+# Obs: Kommer vanligvis fra en database-fil!
+apple = Item(name='Apple', value=10, healing_value=-5, right_click_action=eat)
+banana = Item(name='Banana', value=5, healing_value=3, right_click_action=eat)
+
+character = Character()
+character.inventory.content[0].item = apple
+character.inventory.content[1].item = banana
+
+
+# Simuler at vi trykker på høyre museknapp og bytter gjenstand
+character.right_click()
+character.selected_item = 1
+character.right_click()
+```
