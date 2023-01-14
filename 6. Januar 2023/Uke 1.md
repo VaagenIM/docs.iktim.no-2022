@@ -1,12 +1,12 @@
 ---
-title: Uke 1
+title: Uke 1 - Unit Tests
 aliases: 
   - Uke 1
 lang: nb-NO
 authors:
   - Sondre Grønås
 created: 2023-01-08 14:42:29
-updated: 2023-01-08 14:42:32
+updated: 2023-01-14 09:45:09
 ---
 # Uke 1
 Denne uken jobbet vi med:
