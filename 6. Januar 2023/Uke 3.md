@@ -1,12 +1,12 @@
 ---
-title: Uke 3
+title: Uke 3 - IKT
 aliases: 
   - Uke 3
 lang: nb-NO
 authors:
   - Sondre Grønås
 created: 2023-01-24 09:45:11
-updated: 2023-01-24 09:45:13
+updated: 2023-02-03 09:24:02
 ---
 # Uke 3
 Denne uken jobbet vi med:
