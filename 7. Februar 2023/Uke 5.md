@@ -1,12 +1,12 @@
 ---
-title: Uke 5
+title: Uke 5 - IKT
 aliases: 
   - Uke 5
 lang: nb-NO
 authors:
   - Sondre Grønås
 created: 2023-02-03 09:24:02
-updated: 2023-02-03 09:24:04
+updated: 2023-03-06 09:27:15
 ---
 # Uke 5
 Denne uken jobbet vi med:
